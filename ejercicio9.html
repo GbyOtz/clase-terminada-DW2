@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio9</title>
+</head>
+<body>
+    <center><h1>insertar elementos a arrays</h1></center>
+</body>
+</html>
+
+<script>
+    function saltos_linea( ){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+    function mensaje( mensaje){
+        document.write(mensaje);
+        saltos_linea();
+    }
+    var equipos=[];
+    var cantidad=parseInt(prompt("cuantos equipos desea insertar: "))
+    var cont=1;
+    while(cont<=cantidad){
+        var equipoIngresado= prompt("nombre del equipo "+cont+ " :")
+        equipos.push(equipoIngresado)
+        mensaje(equipoIngresado)
+        cont++
+    }
+    console.log(equipos)
+</script>

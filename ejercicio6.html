@@ -6,28 +6,52 @@
     <title>ejercicio6</title>
 </head>
 <body>
-    <center><h1>JUEGO</h1></center>
+    <center><h1>RANDOM del 1 al 10</h1></center>
 </body>
 </html>
 
 <script>
-    var puntuacion = 0;
-
-    var numTurnos = 3;  
-
-    alert("¡Bienvenido al juego de puntuación!");
-
-    for (let turno = 0; turno < numTurnos; turno++) {
-      
-        var puntosTurno = Math.round(Math.random()*10) 
-
-        puntuacion += puntosTurno;
-
-        alert("Turno ",turno + 1,": Ganaste o perdiste", puntosTurno, puntos)
-        alert("Puntuación actual: "+puntuacion)
+   
+   function saltos_linea( ){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
     }
 
-    alert("¡Fin del juego!");
-    alert("Puntuación final: ",puntuacion);
+    function mensaje(mensaje){
+        document.write(mensaje);
+        saltos_linea();
+    }
 
+    var n1= Math.round(Math.random()*10)
+    var intentos=3;
+    var contador=1;
+    while(contador<=intentos){
+        var numeroIntroducido= parseInt(prompt("ingrese el numero a adivinar entre el 1 al 10"))
+        if(n1==numeroIntroducido){
+            alert("adivinaste en el intento "+contador+", el numero era "+numeroIntroducido )
+        }
+        else{
+            alert("perdiste")
+        }
+        contador++;
+    }
+    alert("fin")
+
+    /*if(n1>0){
+        mensaje(n1)
+
+    }
+    else{
+        mensaje("el numero es 0")
+    }
+    console.log(n1)
+
+    var contador=0;
+    while(contador<n1){
+        alert(n1)
+        console.log(n1)
+        mensaje(n1)
+    contador++
+    }*/
 </script>

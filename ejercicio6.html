@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio6</title>
+</head>
+<body>
+    <center><h1>JUEGO</h1></center>
+</body>
+</html>
+
+<script>
+    var puntuacion = 0;
+
+    var numTurnos = 3;  
+
+    alert("¡Bienvenido al juego de puntuación!");
+
+    for (let turno = 0; turno < numTurnos; turno++) {
+      
+        var puntosTurno = Math.round(Math.random()*10) 
+
+        puntuacion += puntosTurno;
+
+        alert("Turno ",turno + 1,": Ganaste o perdiste", puntosTurno, puntos)
+        alert("Puntuación actual: "+puntuacion)
+    }
+
+    alert("¡Fin del juego!");
+    alert("Puntuación final: ",puntuacion);
+
+</script>

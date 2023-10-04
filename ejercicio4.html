@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio4</title>
+    <h1>uso de prompt</h1>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    function saltos_linea( ){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+    function mensaje(mensaje){
+        document.write(mensaje);
+        saltos_linea();
+    }
+    alert("suma de numeros introducidos por teclado")
+
+    let n1=parseInt(prompt("numero 1"))
+    //prompt sirve para introducir por teclado una variable
+    //permite mandar un mensaje de orientacion
+    let n2=parseInt(prompt("numero 2"))
+
+    function sumar(n1,n2){
+        return n1+n2;
+    }
+    function restar(n1,n2){
+        return n1-n2;
+    }
+    function multiplicar(n1,n2){
+        return n1*n2;
+    }
+    function dividir(n1,n2){
+        return n1/n2;
+    }
+    function cuadrado(n1){
+        return n1*n1;
+    }
+   
+    let resultado= sumar(n1,n2)
+    let resultado2=restar(n1,n2)
+    let resultado3=multiplicar(n1,n2)
+    let resultado4=dividir(n1,n2)
+    let resultado5=cuadrado(n1)
+
+    alert(resultado)
+    alert(resultado2)
+    alert(resultado3)
+    alert(resultado4)
+    alert(resultado5)
+    console.log(resultado, resultado2, resultado3, resultado4, resultado5)
+    mensaje(resultado)
+    mensaje(resultado2)
+    mensaje(resultado3)
+    mensaje(resultado4)
+    mensaje(resultado5)
+</script>

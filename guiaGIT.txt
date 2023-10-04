@@ -1,0 +1,19 @@
+descargar github
+git bash
+1. crear una carpeta
+2. conectar visual code con github
+
+extensiones: live server, js codeformer, error lens, figma, git lens, 
+js jsx, prettier
+
+
+
+en github tendremos repositorios, brunch 
+y commits, son carpetas con subcarpetas.
+para iniciar vc se debe ir a la terminar de git bash y
+ejecutar GIT INIT.
+el siguiente comando GIT CHECKOUT -B NOMBRE_CARPETA
+para hacer commit
+1. git add -A
+2. git commit -m "ejercicios de clase 1"
+para revisar commit

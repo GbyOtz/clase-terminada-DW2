@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio3</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    alert("iniciamos?")
+    function mostrar(operacion, n1, n2, resultado)
+    { 
+        document.write(operacion, "de: ",n1, " y ", n2, )
+        document.write("<br>")
+        document.write("resultado: ", resultado)
+        document.write("<br>")
+    }
+    function sumar(n1,n2){
+        mostrar("suma ",n1,n2,n1+n2 )
+        return n1+n2;
+    }
+    function restar(n1,n2){
+        mostrar("resta ",n1,n2,n1-n2 )
+        return n1-n2;
+    }
+    function multiplicacion(n1,n2){
+        mostrar("multiplicacion ",n1,n2,n1*n2 )
+        return n1*n2;
+    }
+    function division(n1,n2){
+        mostrar("divicion ",n1,n2,n1/n2 )
+        return n1/n2;
+    }
+    function cuadrados(n1){
+        mostrar("cuadrado ",n1,n1, n1*n1 )
+        return n1*n1;
+    }
+    //mostrar resultados
+    var Rsuma= sumar(5,6)
+    var Rresta= restar(3,5)
+    var Rmul= multiplicacion(2,6)
+    var Rdiv= division(4,2)
+    var Rc= cuadrados(8)
+    console.log(Rsuma)
+    console.log(Rresta)
+    console.log(Rmul)
+    console.log(Rdiv)
+    console.log(Rc)
+
+</script>

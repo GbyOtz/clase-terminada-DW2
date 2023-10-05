@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio11</title>
+</head>
+<body>
+    <center><h1>uso de matrices</h1></center>
+</body>
+</html>
+
+<script>
+    var matriz=[];
+    var matriz2 = [[1,2], [3, 4], [5,6]]; 
+    console.log(matriz2[1][0]);
+    console.log(matriz2[2][1]);
+    
+    //matriz2[0][0]="5";
+    //console.log(matriz2[0][0])
+
+    for(var i=0;i<matriz2.length;i++){
+        document.write("<br>")
+        for(var j=0;j<matriz2.length;j++){
+            console.log("valor"+matriz2[i][j]);
+            document.write(matriz2[i][j]);
+            document.write(" ")
+        }
+    }
+
+    var matriz1 = [["a","b"], ["c","d"], ["e","f"]]; 
+    
+    for(var i=0;i<matriz1.length;i++){
+        document.write("<br>")
+        for(var j=0;j<matriz1.length;j++){
+            console.log("valor"+matriz1[i][j]);
+            document.write(matriz1[i][j]);
+            document.write(" ")
+        }
+    }
+    matriz.push(1);
+    var matriz3=[[1,2], [3, 4]];
+    matriz3.push([5,6])
+    matriz3([0][0]).push(10);
+
+    //convertir una matriz a vector
+    var aplanada= matriz2.flat();
+    console.log(aplanada);
+
+    var max= Math.max(...aplanada)
+    console.log()
+
+
+</script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evaluacion</title>
+</head>
+<body>
+    <center><h1><font color="pink">BUSQUEDA DEL TESORO</font></h1></center>
+</body>
+</html>
+<center>
+<script>
+   var contador
+
+    var matriz1 = [[0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0],[0,0,0,0,0], [0,0,0,0,0]]; 
+    
+    var x= Math.round(Math.random()*4)
+    var y= Math.round(Math.random()*4)
+
+     +
+
+    matriz1[x][y]=1;
+    document.write("<br>")
+
+    var xU=parseInt(prompt("posicion en columna: "))
+    var yU=parseInt(prompt("posicion en fila: "))
+
+    document.write(xU,yU)
+    document.write("<br>")
+    if(x==xU && y==yU){
+        document.write("encontraste el tesoro");
+    }
+    else{
+        document.write("perdiste, el tesoro estaba en la posicion:")
+        document.write("<br>")
+        document.write("columna: ",x, " fila: ",y)
+    }
+
+    document.write("<br>")
+    for(var i=0;i<matriz1.length;i++){
+        document.write("<br>")
+        for(var j=0;j<matriz1.length;j++){
+            console.log("valor"+matriz1[i][j]);
+            document.write(matriz1[i][j]);
+            document.write(" ")
+        }
+    }
+
+
+
+
+
+   
+</script>
+</center>

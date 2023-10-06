@@ -11,46 +11,53 @@
 </html>
 <center>
 <script>
-   var contador
+   var contador=0;
+   var intentos=2; 
 
-    var matriz1 = [[0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0],[0,0,0,0,0], [0,0,0,0,0]]; 
+    document.write("MATRIZ 5X5")
+    document.write("<br>")
+    alert("tienes 2  intentos")
     
-    var x= Math.round(Math.random()*4)
-    var y= Math.round(Math.random()*4)
+    for(var i=0; i<intentos;i++){
+        var matriz1 = [[0,0,0,0,0], [0,0,0,0,0], [0,0,0,0,0],[0,0,0,0,0], [0,0,0,0,0]];
+        var x= Math.round(Math.random()*4)
+        var y= Math.round(Math.random()*4)
+        matriz1[x][y]=1;
+        var xU=parseInt(prompt("posicion en columna: "))
+        var yU=parseInt(prompt("posicion en fila: "))
+        alert("intenta otra vez")
+        if(x==xU && y==yU){
+            document.write("encontraste el tesoro!!! ");
+            document.write("en la posicion introducida ",xU," ",yU)
 
-     +
-
-    matriz1[x][y]=1;
-    document.write("<br>")
-
-    var xU=parseInt(prompt("posicion en columna: "))
-    var yU=parseInt(prompt("posicion en fila: "))
-
-    document.write(xU,yU)
-    document.write("<br>")
-    if(x==xU && y==yU){
-        document.write("encontraste el tesoro");
-    }
-    else{
-        document.write("perdiste, el tesoro estaba en la posicion:")
-        document.write("<br>")
-        document.write("columna: ",x, " fila: ",y)
-    }
-
-    document.write("<br>")
-    for(var i=0;i<matriz1.length;i++){
-        document.write("<br>")
-        for(var j=0;j<matriz1.length;j++){
-            console.log("valor"+matriz1[i][j]);
-            document.write(matriz1[i][j]);
-            document.write(" ")
+            document.write("<br>")
+            for(var i=0;i<matriz1.length;i++){
+                document.write("<br>")
+                for(var j=0;j<matriz1.length;j++){
+                    console.log("valor"+matriz1[i][j]);
+                    document.write(matriz1[i][j]);
+                    document.write(" ")
+                }
+            }
+            
+        }
+        else{
+            if(contador==intentos){
+                document.write("<br>")
+                document.write("perdiste, el tesoro estaba en la posicion:")
+                document.write("columna: ",x, " fila: ",y)
+                document.write("<br>")
+                for(var i=0;i<matriz1.length;i++){
+                    document.write("<br>")
+                    for(var j=0;j<matriz1.length;j++){
+                        console.log("valor"+matriz1[i][j]);
+                        document.write(matriz1[i][j]);
+                        document.write(" ")
+                    }
+                }
+            }
+            
         }
     }
-
-
-
-
-
-   
 </script>
 </center>
